@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Netflix</title>
+<style>
+
+#netflixLogo {
+    position: absolute;
+    top: 5px;
+    left: 150px;
+    width: 200px;
+    height: 50px;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url("C:/Users/lenovo/OneDrive/Desktop/Netflix/project.jpg");
+    background-size: cover; 
+    font-family: Trebuchet MS, sans-serif;
+    margin: 0;
+}
+
+.container {
+    width:450px;
+    height:400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.input-box input[type="text"] {
+    background-color: rgba(0, 0, 0, 0.8);
+    color:white;
+}
+
+.input-box input[type="password"] {
+    background-color: rgba(0, 0, 0, 0.8);
+    color:white;
+}
+
+button[type="submit"] {
+    background-color: red;
+    color: white;
+    width:200px;
+    height:40px;
+    font-size: 20px;
+}
+
+</style>
+</head>
+<body>
+<img id="netflixLogo" src="C:/Users/lenovo/OneDrive/Desktop/Netflix/logo.png" alt="Netflix Logo">
+<div class="container">
+    <form action="profile.html">
+        <h1 style="color: white;">Sign In</h1>
+        <div style="color: white;" class="input-box">
+            <input type="text" placeholder="Email or phone number"><br>
+            <a href="2nd_page.html"></a>
+        </div>
+        <div style="color: white;" class="input-box"><br>
+            <input type="password" placeholder="Password"><br>
+        </div>
+        <div style="color: white;" class="remember-forget"><br>
+            <label><input type="checkbox"> Remember me</label><br>
+            <label><a style="color: white;" href="2nd_page.html">Forgot password?</a><br><br></label>
+        </div>
+        <a href="2nd_page.html">
+        <button type="submit">Sign In</button><br>
+        </a><br>
+        <div style="color: white;" class="registration-link">
+            <p>New to Netflix? <a href="2nd_page.html" style="color: white;">Sign up now</a></p>
+        </div>
+    </form>
+</div>
+</body>
+</html>
